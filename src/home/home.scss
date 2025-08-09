@@ -1,0 +1,108 @@
+.home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 27, 73, 0.65);
+  }
+
+  .home-hero {
+    position: relative;
+    padding-top: 120px; // account for navbar
+    padding-bottom: 80px;
+    min-height: 100vh;
+    z-index: 1; // above overlay
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw + 1rem, 4rem);
+      line-height: 1.1;
+    }
+
+    .hero-subtitle {
+      max-width: 800px;
+    }
+
+    .hero-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 0;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 28px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      &-left {
+        left: 24px;
+      }
+
+      &-right {
+        right: 24px;
+      }
+    }
+
+    .hero-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 28px;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+
+        &.active {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+// Buttons
+.btn-primary {
+  background-color: #2b6cf6;
+  border-color: #2b6cf6;
+
+  &:hover {
+    background-color: #1f57cc;
+    border-color: #1f57cc;
+  }
+}
+
+.btn-outline-light:hover {
+  color: #0c1b49;
+  background: #fff;
+  border-color: #fff;
+}
+
+// Responsive adjustments
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .btn.btn-danger {
+    margin-top: 10px;
+  }
+} 
