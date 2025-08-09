@@ -79,22 +79,39 @@
           border-radius: 50%;
         }
       }
-
+      
       
       }  .carousel-control-prev-icon,.carousel-control-next-icon {
-         filter: invert(1);
+         //filter: invert(1);
+             /* filter: invert(1); */
+        background-color: #1468FB;
+        color: #fff;
+        border-radius: 27px;
+        height: 44px;
+        width: 44px;
+        padding: 10px;
+
       
     }
 
     .hero-title {
-      font-size: clamp(2rem, 4vw + 1rem, 4rem);
-      line-height: 1.1;
+      font:normal normal 700 62px/100% Montserrat-Bold;
+      letter-spacing: -0.02em;
+      text-align: center;
+      
     }
 
     .hero-subtitle {
+      font:normal normal 400 20px/100% Montserrat-Regular;
       max-width: 800px;
+      text-align: center;
     }
-
+    .gap-30{
+        gap: 30px;
+        a{
+            font: normal normal 600 16px/24px Montserrat-Semibold;
+        }
+    }
     .hero-arrow {
       position: absolute;
       top: 50%;

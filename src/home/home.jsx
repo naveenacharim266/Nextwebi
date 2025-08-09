@@ -103,7 +103,7 @@ function Home() {
                           <div className="col-lg-10 col-xl-8">
                             <h1 className="hero-title text-white fw-bold mb-3">{slide.title}</h1>
                             <p className="hero-subtitle text-white-50 mb-4">{slide.subtitle}</p>
-                            <div className="d-flex gap-3 justify-content-center">
+                            <div className="d-flex gap-30 justify-content-center">
                               <a href="#contact" className="btn btn-primary px-4 py-2">Get in Touch</a>
                               <a href="#works" className="btn btn-outline-light px-4 py-2">Our Works</a>
                             </div>
