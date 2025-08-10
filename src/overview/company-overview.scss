@@ -1,0 +1,47 @@
+$bg-dark: #0b0f14;
+$text-light: #ccc;
+$text-white: #fff;
+$accent-green: #22c55e;
+
+.trusted-section {
+  background-color: $bg-dark;
+  color: $text-light;
+
+  .title {
+    color: $text-white;
+    font-weight: bold;
+    span {
+      color: $accent-green;
+    }
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+
+  .stats {
+    h4 {
+      color: $accent-green;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 0.9rem;
+      color: $text-light;
+    }
+  }
+
+  .badge-img {
+    height: 60px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    object-fit: contain;
+  }
+
+  img.rounded {
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,50 @@
+.case-studies {
+    background-color: #000; // Black background
+    color: #fff;
+  
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  
+    .section-subtitle {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #ccc;
+    }
+  
+    .case-card {
+      background: #fff;
+      color: #000;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  
+      .case-text {
+        flex: 1;
+      }
+  
+      .case-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0 1rem 1rem 0;
+  
+        @media (max-width: 768px) {
+          border-radius: 0 0 1rem 1rem;
+        }
+      }
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 1rem;
+    }
+  
+    .carousel-indicators [data-bs-target] {
+      background-color: #007bff;
+    }
+  }
+  
