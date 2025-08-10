@@ -1,0 +1,22 @@
+.trusted-clients {
+    background-color: #0d0d0d; // Dark background
+    .subtitle {
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .client-item {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: transform 0.2s ease-in-out;
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+    .client-logo {
+      height: 30px;
+      width: auto;
+    }
+  }
+  
