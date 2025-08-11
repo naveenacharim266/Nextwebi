@@ -1,7 +1,17 @@
 #root {
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 
 @keyframes logo-spin {

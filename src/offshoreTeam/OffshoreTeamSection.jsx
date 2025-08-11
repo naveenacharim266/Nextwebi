@@ -110,4 +110,3 @@ const OffshoreTeamPage = () => {
 };
 
 export default OffshoreTeamPage;
-  

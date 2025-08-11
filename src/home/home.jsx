@@ -11,7 +11,7 @@ function Home() {
       { label: "Hire developers", items: [{ label: "Frontend" }, { label: "Backend" }, { label: "Full Stack" }] },
       { label: "Solutions", items: [{ label: "E-commerce" }, { label: "CRM" }] },
       { label: "Technologies", items: [{ label: "React" }, { label: "Node.js" }, { label: "Python" }] },
-      { label: "Our Work" } 
+      { label: "Our Work" }
     ];
 
     const slides = [
@@ -32,8 +32,7 @@ function Home() {
       { image: bgImage, title: <>Deliver Faster With Us</>, subtitle: "Product engineering and dedicated teams to accelerate delivery." },
       { image: bgImage, title: <>Scale When You Need</>, subtitle: "Flexible engagement to match your roadmap." },
     ];
-  
-    return (
+  return (
         <div className="home">
             <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
                 <div className="container">

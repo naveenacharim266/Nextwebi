@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 
   &::before {
     content: "";
@@ -11,11 +14,17 @@
     inset: 0;
     background: rgba(12, 27, 73, 0.65);
   }
+  
   .navbar{
     position: absolute !important;
+    width: 100%;
+    max-width: 100%;
+    
     .container{
       margin-top: 14px;
       gap: 222px;
+      max-width: 100%;
+      
         .navbar-brand{
             img{
                 height: 31px;
@@ -55,13 +64,19 @@
     padding: 0; // carousel handles full height
     min-height: 100vh;
     z-index: 1; // above overlay
+    width: 100%;
+    max-width: 100%;
 
     #heroCarousel {
+      width: 100%;
+      max-width: 100%;
+      
       .carousel-item {
         min-height: 100vh;
         background-size: cover;
         background-position: center;
         position: relative;
+        width: 100%;
 
         &::before {
           content: "";
@@ -73,6 +88,7 @@
         .container {
           position: relative;
           z-index: 1;
+          max-width: 100%;
         }
       }
 
@@ -209,14 +225,25 @@
   .btn.btn-danger {
     margin-top: 10px;
   }
+  
+  .home .navbar .container {
+    gap: 20px !important;
+  }
 } 
 
 // Additional responsive tweaks
 @media (max-width: 1200px) {
   .home {
     .navbar {
-      .container { gap: 40px; }
-      .navbar-collapse .navbar-nav { width: auto; height: auto; gap: 14px; }
+      .container { 
+        gap: 40px; 
+        padding: 0 15px;
+      }
+      .navbar-collapse .navbar-nav { 
+        width: auto; 
+        height: auto; 
+        gap: 14px; 
+      }
     }
     .home-hero {
       .hero-title { font: normal normal 700 48px/110% Montserrat-Bold; }
@@ -228,7 +255,11 @@
 @media (max-width: 992px) {
   .home {
     .navbar {
-      .container { gap: 16px; margin-top: 10px; }
+      .container { 
+        gap: 16px; 
+        margin-top: 10px; 
+        padding: 0 15px;
+      }
       .navbar-brand img { width: 136px; height: auto; }
       .navbar-collapse { text-align: left; }
       .navbar-collapse .navbar-nav { gap: 12px; width: auto; height: auto; }
@@ -253,7 +284,10 @@
 @media (max-width: 768px) {
   .home {
     .navbar {
-      .container { gap: 12px; }
+      .container { 
+        gap: 12px; 
+        padding: 0 10px;
+      }
       .navbar-brand img { width: 120px; }
     }
 
@@ -278,7 +312,10 @@
 @media (max-width: 576px) {
   .home {
     .navbar {
-      .container { gap: 8px; }
+      .container { 
+        gap: 8px; 
+        padding: 0 8px;
+      }
       .btn-danger { display: none; }
     }
 

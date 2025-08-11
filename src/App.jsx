@@ -9,7 +9,7 @@ import CaseStudies from './casestudies/CaseStudies.jsx';
 import FAQSection from './faqsection/FAQSection.jsx';
 import OffshoreTeamSection from './offshoreTeam/OffshoreTeamSection.jsx';
 import TrustedClients from './clients/clients.jsx';
-import Testimonalcarosul from'./Testimonalcarosul/TestimonialCarousel.jsx'; 
+import Testimonalcarosul from './Testimonalcarosul/TestimonialCarousel.jsx'; 
 import Technologies from './technologies/Technologies.jsx';
 import RelatedBlogs from './relatedblogs/Relatedblogs.jsx';
 import ContactSection from './contactsection/ContactSection.jsx';

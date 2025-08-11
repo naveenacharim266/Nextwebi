@@ -27,7 +27,6 @@ function Desktop5() {
             </p>
             <p className="p-longline">development costs Offshore development services refers to the practice of hiring a remote team or a software development company in a different company</p>
           </div>
-          
         </div>
 
         {/* RIGHT SIDE */}

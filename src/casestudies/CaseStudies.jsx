@@ -29,7 +29,7 @@ const CaseStudies = () => {
         <div className="text-left mb-4">
           <h2 className="section-title">Where Great Ideas Became Real Results</h2>
           <p className="section-subtitle">
-            Offshore development services refers to the practice of hiring a remote team 
+            Offshore development services refers to the practice of hiring a remote team
             or a software development company in a different country to help reduce development costs.
           </p>
         </div>
