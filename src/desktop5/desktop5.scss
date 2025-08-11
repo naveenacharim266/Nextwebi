@@ -1,12 +1,20 @@
 .offshore-section {
     background-color: #0a0a0a;
-    
+    min-height: 746px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     .container{
       .row{
         .left-content{
           display: flex;
           flex-flow: column;
           .lb1{
+            gap: 24px;
+            h2{
+              font: normal normal 700 42px/50px Lato;
+              letter-spacing: 0%;
+              color: #FFFFFF;
+            }
             .lead{
               font: normal normal 500 20px/31px Lato;
               letter-spacing: 0%;
@@ -30,17 +38,23 @@
             .lb2::-webkit-scrollbar-thumb:hover {
               background-color: #2782D1;
             }
-          .text-light{
+            .p-shortline{
             font: normal normal 500 16px/27px Lato;
             letter-spacing: 0%;
             color: #FFFFFF;
           }
-          .small{
+          .p-longline{
             font: normal normal 500 16px/31px Lato;
+            color: #FFFFFF;
           }
         }
         .right-content{
-
+          .offshore-img{
+            margin-top: 130px;
+            width: 100%;
+            height: auto;
+            max-width: 593px;
+          }
         }
       }
     }
@@ -52,8 +66,45 @@
     color: #ccc !important;
   }
   
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
+    .offshore-section {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
     .offshore-section .col-lg-6:first-child {
       margin-bottom: 2rem;
     }
+    .offshore-section .left-content .lb1 h2 {
+      font: normal normal 700 36px/44px Lato;
+    }
+    .offshore-section .left-content .lb1 .lead {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .offshore-section .left-content .lb2 { height: 220px; }
+  }
+  
+  @media (max-width: 992px) {
+    .offshore-section { min-height: unset; }
+    .offshore-section .col-lg-6:first-child { margin-bottom: 2rem; }
+    .offshore-section .right-content .offshore-img { margin-top: 48px; max-width: 520px; }
+    .offshore-section .left-content .lb1 h2 { font: normal normal 700 32px/40px Lato; }
+    .offshore-section .left-content .lb1 .lead { font-size: 18px; line-height: 28px; }
+    .offshore-section .left-content .lb2 { height: 200px; }
+  }
+
+  @media (max-width: 768px) {
+    .offshore-section { padding-top: 2rem; padding-bottom: 2rem; }
+    .offshore-section .right-content .offshore-img { margin-top: 32px; max-width: 460px; }
+    .offshore-section .left-content .lb1 h2 { font: normal normal 700 28px/36px Lato; }
+    .offshore-section .left-content .lb1 .lead { font-size: 16px; line-height: 24px; }
+    .offshore-section .left-content .lb2 { height: 180px; }
+  }
+
+  @media (max-width: 576px) {
+    .offshore-section { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+    .offshore-section .right-content .offshore-img { margin-top: 24px; max-width: 100%; }
+    .offshore-section .left-content .lb1 h2 { font: normal normal 700 24px/32px Lato; }
+    .offshore-section .left-content .lb1 .lead { font-size: 14px; line-height: 22px; }
+    .offshore-section .left-content .lb2 { height: 160px; }
   }

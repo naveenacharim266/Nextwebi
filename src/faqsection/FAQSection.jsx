@@ -40,7 +40,8 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="faq-section">
+    <section className="faq-section">
+      <div className="container">
       <h2>Frequently Asked Questions</h2>
       <p>
         We offer a range of pricing plans to fit every budget and level of need.
@@ -69,6 +70,8 @@ const FAQSection = () => {
         ))}
       </div>
     </div>
+    </section>
+    
   );
 };
 

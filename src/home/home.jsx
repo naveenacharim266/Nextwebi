@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import bgImage from "../assets/images/home/home.jpg";
 import logo from "../assets/images/home/logo.png";
 import "./home.scss";
+import rightArrow from "../assets/images/home/right-arrow.svg";
+import leftArrow from "../assets/images/home/left-arrow.svg";
 function Home() {
     const navItems = [
       { label: "Company", items: [{ label: "About Us" }, { label: "Team" }, { label: "Careers" }] },
@@ -101,8 +103,8 @@ function Home() {
                       <div className="container position-relative d-flex align-items-center min-vh-100">
                         <div className="row justify-content-center w-100">
                           <div className="col-lg-10 col-xl-8">
-                            <h1 className="hero-title text-white fw-bold mb-3">{slide.title}</h1>
-                            <p className="hero-subtitle text-white-50 mb-4">{slide.subtitle}</p>
+                            <h1 className="hero-title  mb-3">{slide.title}</h1>
+                            <p className="hero-subtitle  mb-4">{slide.subtitle}</p>
                             <div className="d-flex gap-30 justify-content-center">
                               <a href="#contact" className="btn btn-primary px-4 py-2">Get in Touch</a>
                               <a href="#works" className="btn btn-outline-light px-4 py-2">Our Works</a>
@@ -114,12 +116,14 @@ function Home() {
                   ))}
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
+                  {/* <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Previous</span> */}
+                  <img src={leftArrow} alt="left arrow not available" />
                 </button>
                 <button className="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Next</span>
+                  {/* <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Next</span> */}
+                  <img src={rightArrow} alt="right arrow not available" />
                 </button>
               </div>
             </section>

@@ -10,15 +10,15 @@ const CaseStudies = () => {
       image: "/images/cs-bg1.jpg"
     },
     {
-      title: "E-commerce Platform for Luxury Goods",
+      title: "Web Application Development For A Real Estate Company In Dubai",
       description:
-        "Delivered a scalable and secure platform allowing seamless online purchases for high-end brands globally.",
+        "Our client, a real estate agency based in Dubai, recognized the growing demand for a streamlined platform that would facilitate the process of buying and renting properties in Dubai.",
       image: "/images/cs-bg1.jpg"
     },
     {
-      title: "AI-powered Healthcare Analytics",
+      title: "Web Application Development For A Real Estate Company In Dubai",
       description:
-        "Built an AI-driven analytics dashboard to help hospitals make data-backed decisions for better patient outcomes.",
+        "Our client, a real estate agency based in Dubai, recognized the growing demand for a streamlined platform that would facilitate the process of buying and renting properties in Dubai.",
       image: "/images/cs-bg1.jpg"
     }
   ];
@@ -26,7 +26,7 @@ const CaseStudies = () => {
   return (
     <section className="case-studies py-5">
       <div className="container">
-        <div className="text-center mb-4">
+        <div className="text-left mb-4">
           <h2 className="section-title">Where Great Ideas Became Real Results</h2>
           <p className="section-subtitle">
             Offshore development services refers to the practice of hiring a remote team 

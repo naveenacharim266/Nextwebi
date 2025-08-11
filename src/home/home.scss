@@ -12,7 +12,10 @@
     background: rgba(12, 27, 73, 0.65);
   }
   .navbar{
+    position: absolute !important;
     .container{
+      margin-top: 14px;
+      gap: 222px;
         .navbar-brand{
             img{
                 height: 31px;
@@ -21,9 +24,12 @@
         }
         .navbar-collapse{
             .navbar-nav{
+              gap: 16px;
+              width: 567px;
+              height: 15px;
                 .nav-item{
                     .nav-link{
-                        font: normal normal 700 12px Montserrat;
+                        font: normal normal 700 12px/100% Montserrat;
                         font-style: bold;
                         line-height: 100%;
                         letter-spacing: 0px;
@@ -77,7 +83,13 @@
           width: 10px;
           height: 10px;
           border-radius: 50%;
+          opacity: 1;
+          
         }
+        .active{
+          background-color: #1468FB;
+        }
+        
       }
       
       
@@ -98,13 +110,14 @@
       font:normal normal 700 62px/100% Montserrat-Bold;
       letter-spacing: -0.02em;
       text-align: center;
-      
+      color: #FFFFFF;
     }
 
     .hero-subtitle {
       font:normal normal 400 20px/100% Montserrat-Regular;
       max-width: 800px;
       text-align: center;
+      color: #FFFFFF;
     }
     .gap-30{
         gap: 30px;
@@ -195,5 +208,96 @@
 
   .btn.btn-danger {
     margin-top: 10px;
+  }
+} 
+
+// Additional responsive tweaks
+@media (max-width: 1200px) {
+  .home {
+    .navbar {
+      .container { gap: 40px; }
+      .navbar-collapse .navbar-nav { width: auto; height: auto; gap: 14px; }
+    }
+    .home-hero {
+      .hero-title { font: normal normal 700 48px/110% Montserrat-Bold; }
+      .hero-subtitle { font-size: 18px; line-height: 150%; max-width: 720px; }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .home {
+    .navbar {
+      .container { gap: 16px; margin-top: 10px; }
+      .navbar-brand img { width: 136px; height: auto; }
+      .navbar-collapse { text-align: left; }
+      .navbar-collapse .navbar-nav { gap: 12px; width: auto; height: auto; }
+      .btn-danger { margin-top: 8px; width: auto; height: auto; padding: 6px 12px; }
+    }
+
+    .home-hero {
+      .hero-title { font: normal normal 700 40px/115% Montserrat-Bold; }
+      .hero-subtitle { font-size: 18px; line-height: 150%; max-width: 640px; }
+      .gap-30 { gap: 16px; }
+      #heroCarousel {
+        .carousel-indicators { bottom: 18px; }
+        .carousel-indicators [data-bs-target] { width: 8px; height: 8px; }
+      }
+    }
+
+    .carousel-control-prev img,
+    .carousel-control-next img { width: 40px; height: 40px; }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    .navbar {
+      .container { gap: 12px; }
+      .navbar-brand img { width: 120px; }
+    }
+
+    .home-hero {
+      .hero-title { font: normal normal 700 34px/120% Montserrat-Bold; }
+      .hero-subtitle { font-size: 16px; line-height: 150%; padding: 0 8px; }
+      .gap-30 {
+        gap: 14px;
+        a { font: normal normal 600 14px/22px Montserrat-Semibold; padding: 10px 14px; }
+      }
+      #heroCarousel {
+        .carousel-indicators { bottom: 14px; }
+        .carousel-indicators [data-bs-target] { width: 8px; height: 8px; }
+      }
+    }
+
+    .carousel-control-prev img,
+    .carousel-control-next img { width: 34px; height: 34px; }
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    .navbar {
+      .container { gap: 8px; }
+      .btn-danger { display: none; }
+    }
+
+    .home-hero {
+      .hero-title { font: normal normal 700 28px/125% Montserrat-Bold; padding: 0 6px; }
+      .hero-subtitle { font-size: 14px; line-height: 150%; padding: 0 10px; max-width: 90%; margin-left: auto; margin-right: auto; }
+      .gap-30 {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        a { width: 100%; max-width: 260px; text-align: center; }
+      }
+      #heroCarousel {
+        .carousel-indicators { bottom: 10px; }
+        .carousel-indicators [data-bs-target] { width: 7px; height: 7px; }
+      }
+    }
+
+    .carousel-control-prev img,
+    .carousel-control-next img { width: 28px; height: 28px; }
   }
 } 

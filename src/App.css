@@ -59,3 +59,11 @@
   font-family: 'Montserrat-Light';
   src: url('./assets/fonts/Montserrat-Light.ttf');
 }
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter/static/Inter_18pt-Regular.ttf');
+}

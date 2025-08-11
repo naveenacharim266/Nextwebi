@@ -45,3 +45,26 @@ $accent-green: #22c55e;
     border-radius: 12px;
   }
 }
+
+@media (max-width: 1200px) {
+  .trusted-section {
+    .title { font-size: 1.6rem; }
+    .description { font-size: 0.95rem; }
+    .badge-img { height: 54px; }
+  }
+}
+
+@media (max-width: 992px) {
+  .trusted-section {
+    .title { font-size: 1.4rem; }
+    .description { font-size: 0.9rem; }
+    .stats h4 { font-size: 1.3rem; }
+  }
+}
+
+@media (max-width: 576px) {
+  .trusted-section {
+    padding: 24px;
+    .badge-img { height: 48px; }
+  }
+}

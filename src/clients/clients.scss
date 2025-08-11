@@ -1,9 +1,12 @@
 .trusted-clients {
     background-color: #0d0d0d; // Dark background
     .subtitle {
-      color: #fff;
+      font: normal normal 600 20px/24px Montserrat;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #FFFF;
       font-size: 0.95rem;
-      font-weight: 500;
+      
     }
     .client-item {
       color: #fff;
@@ -19,4 +22,20 @@
       width: auto;
     }
   }
+
+@media (max-width: 992px) {
+  .trusted-clients {
+    .subtitle { font-size: 0.9rem; }
+    .client-item { font-size: 0.95rem; }
+    .client-logo { height: 26px; }
+  }
+}
+
+@media (max-width: 576px) {
+  .trusted-clients {
+    .subtitle { font-size: 0.85rem; }
+    .client-logo { height: 22px; }
+    .client-item { gap: 6px; }
+  }
+}
   

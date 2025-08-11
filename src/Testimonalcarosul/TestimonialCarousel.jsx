@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import "./TestimonialCarousel.scss";
+import quotes from '../assets/images/quotes.svg';
+import rightArrow from "../assets/images/home/right-arrow.svg";
+import leftArrow from "../assets/images/home/left-arrow.svg";
 
 const TestimonialCarousel = () => {
   const testimonials = [
     {
       text: "I wanted to redesign and revamp the website of my institution. I contacted Nextwebi and they understood the vision of an organization and through several discussions and timely suggestions, the website was delivered and deployed successfully. Nextwebi, without a doubt, has what it takes to make a great web application, not to mention with a competitive price too. Now on seeing the end product I am satisfied and know that the web app is in safe hands. Thank you to the entire team.",
-      companyLogo: "/logos/dynamatic.png", // replace with actual path
+      companyLogo: "/images/dynamatictechnologies.svg", // replace with actual path
       companyName: "Dynamatic Technologies",
       authorName: "Qenowned & D Firm",
       authorRole: "Team Lead",
-      authorImg: "/avatars/author1.jpg" // replace with actual path
+      authorImg: "/images/qenowned&dFirm.svg" // replace with actual path
     },
     {
       text: "The development team was outstanding and delivered beyond expectations. The project was managed effectively and delivered on time with excellent communication throughout the process.",
@@ -42,32 +45,45 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="testimonial-section">
-      <h2>Hear It From Those Who Matter Most</h2>
+    <section className="testimonial-section">
+      <div className="container">
+      <div className="txtblock">
+      <h2 >Hear It From Those Who Matter Most</h2>
       <p>
         Offshore development services refers to the practice of hiring a remote
         team or a software development company in a different company to help
         reduce development costs
       </p>
+      </div>
 
       <div className="carousel-container">
         <button className="arrow-btn left" onClick={prevSlide}>
-          <IoChevronBack />
+        <img src={leftArrow} alt="left arrow not available" />
         </button>
 
         <div className="testimonial-card">
-          <FaQuoteLeft className="quote-icon" />
+          {/* <FaQuoteLeft className="quote-icon" /> */}
+          <img className="mx-auto" src={quotes} alt="" />
           <p className="testimonial-text">
             {testimonials[currentIndex].text}
           </p>
           <div className="divider"></div>
+          <div className="companyAndAuthor">
           <div className="company-info">
             <img
               src={testimonials[currentIndex].companyLogo}
               alt={testimonials[currentIndex].companyName}
               className="company-logo"
             />
-            <span>{testimonials[currentIndex].companyName}</span>
+            {testimonials[currentIndex].companyName === "Dynamatic Technologies" ? (
+              <span className="company-name">
+                Dynamatic
+                <br />
+                Technologies
+              </span>
+            ) : (
+              <span className="company-name">{testimonials[currentIndex].companyName}</span>
+            )}
           </div>
           <div className="author-info">
             <img
@@ -80,10 +96,11 @@ const TestimonialCarousel = () => {
               <p>{testimonials[currentIndex].authorRole}</p>
             </div>
           </div>
+          </div>
         </div>
 
         <button className="arrow-btn right" onClick={nextSlide}>
-          <IoChevronForward />
+        <img src={rightArrow} alt="right arrow not available" />
         </button>
       </div>
 
@@ -97,6 +114,8 @@ const TestimonialCarousel = () => {
         ))}
       </div>
     </div>
+    </section>
+    
   );
 };
 
